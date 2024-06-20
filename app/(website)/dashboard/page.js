@@ -43,16 +43,16 @@ const Dashboard = async () => {
               </th>
             </tr>
           </thead>
-          <tbody>
+          <tbody className='w-full'>
             {categories.map(category => (
               <tr key={category.id}>
-                <td className='px-5 py-3 text-sm font-normal text-center text-gray-800 border-b border-gray-200'>  
+                <td className='px-5 py-3 text-sm font-normal text-center  text-gray-800 border-b border-gray-200 '>  
                   <Link 
                   href={`/dashboard/category/${category.id}/update`}>
                   {category.name}
                   </Link>
                 </td>
-                <td className='px-5 py-3 text-sm font-normal text-center flex items-center text-gray-800 border-b border-gray-200'>  
+                <td className='px-5 py-3 text-sm font-normal text-center flex items-center justify-center  text-gray-800 border-b border-gray-200'>  
                     <Link 
                     className='mr-1'
                     href={`/dashboard/category/${category.id}/update`}>
